@@ -1,0 +1,528 @@
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: #171717;
+    color: white;
+    z-index: -10;
+
+}
+
+.navbar {
+    height: 80px;
+    padding: 12px 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: #303030;
+}
+
+.right-nav {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 70%;
+    text-align: center;
+    height: 56px;
+
+}
+
+
+.hamborgir {
+    width: 60px;
+    height: 60px;
+    display: none;
+    cursor: pointer;
+    transition: 0.3s;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.hamborgir:hover {
+    background-color: #535353;
+
+}
+
+.hamborgir-icon {
+    width: 40px;
+}
+
+.right-nav-menu {
+    font-size: 18px;
+    padding: 10px 0;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+    color: white;
+    width: 12vw;
+}
+
+.underline {
+
+    height: 4px;
+    background-color: #27AE60;
+    position: absolute;
+    bottom: -10px;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: transform 0.4s ease-out, opacity 0.4s ease-out, width 0.3s ease-out;
+    width: 0;
+}
+
+.right-nav a:nth-child(1):hover~.underline {
+    transform: translateX(-200%);
+    opacity: 1;
+    width: 12vw;
+    z-index: 1;
+
+}
+
+.right-nav a:nth-child(2):hover~.underline {
+    transform: translateX(-100%);
+    opacity: 1;
+    width: 12vw;
+    z-index: 1;
+
+}
+
+.right-nav a:nth-child(3):hover~.underline {
+    transform: translateX(0);
+    opacity: 1;
+    width: 12vw;
+    z-index: 1;
+
+}
+
+.logo {
+    font-size: 36px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.right-nav-menu:hover {
+    color: #27AE60;
+}
+
+.perkenalan {
+    font-size: 48px;
+    line-height: 62.5px;
+    font-weight: 700;
+    width: 453px;
+    color: white;
+}
+
+.pekerjaan {
+    color: #828282;
+}
+
+.download,
+.learn {
+    width: 143px;
+    height: 42px;
+    margin-top: 20px;
+}
+
+.download {
+    background-color: #27AE60;
+    border: none;
+    color: white;
+    transition: 0.3s all;
+}
+
+.learn {
+    background: none;
+    border: 1px solid white;
+    color: white;
+    transition: 0.3s all;
+
+}
+
+.download:hover {
+    filter: brightness(0.8);
+}
+
+.learn:hover {
+    background-color: white;
+    color: #171717;
+}
+
+.hero-section {
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    overflow-x: hidden;
+    padding: 0 30px;
+
+
+}
+
+.hero-section aside {
+    flex-shrink: 1;
+    margin: 40px;
+}
+
+
+.pepe {
+    width: 37vw;
+    height: 37vw;
+    border-radius: 50%;
+
+}
+
+
+
+
+.about-head {
+    line-height: 62.5px;
+    font-weight: 700;
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.about-desc {
+    width: 75vw;
+    line-height: 23.44px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+
+}
+
+.ellipse-back {
+    background-color: #212121;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ellipse-dot {
+    background-color: #27AE60;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.ellipse {
+    margin: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    white-space: nowrap;
+
+}
+
+
+.ellipses {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px auto;
+    width: 100vw;
+    flex-wrap: wrap;
+
+}
+
+.ellipse-judul {
+    margin: 5px 0;
+    font-size: 18px;
+    font-weight: 700;
+
+}
+
+
+.ellipse-desc {
+    font-size: 18px;
+}
+
+.job-judul {
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+
+}
+
+.job {
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-container {
+    width: 349px;
+    height: 241px;
+    background-color: #212121;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 20px;
+    transition: 0.1s;
+    border-bottom: 5px solid #27AE60;
+    z-index: -5;
+
+}
+
+.card {
+    width: 250px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: none;
+    border: none;
+}
+
+.cards {
+    margin-top: 100px;
+    display: flex;
+    width: 93.75vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.vector-card {
+    width: 57px;
+    height: 46.47px;
+}
+
+.card-desc {
+    font-weight: 500;
+    font-size: 36px;
+    color: #535353;
+}
+
+
+.skills {
+    margin: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills-judul {
+    font-size: 48px;
+    line-height: 62.5px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.skill-container {
+    background-color: #212121;
+    border-radius: 5px;
+    width: 93.75vw;
+    flex-wrap: wrap;
+    margin: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 80px;
+}
+
+.persentase-skill {
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 93.74px;
+    color: #4F4F4F;
+}
+
+.nama-skill {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 31.25px;
+    color: #27AE60;
+}
+
+.get-in {
+    margin: 100px auto;
+    width: 71vw;
+}
+
+.daftar-judul {
+    font-size: 48px;
+    line-height: 62.5px;
+    font-weight: 700;
+    text-align: center;
+
+}
+
+.input-get-in {
+
+    margin: 100px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.input-form {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.input {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #4F4F4F;
+    color: white;
+    width: 33vw;
+    margin-bottom: 20px;
+    outline: none;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.textarea {
+    margin-top: 20px;
+    width: 71vw;
+    height: 109px;
+    background: none;
+    border: 1px solid #4F4F4F;
+    resize: none;
+    color: white;
+    padding: 10px;
+    outline: none;
+}
+
+.textarea::placeholder {
+    margin-left: 10px;
+    font-size: 14px;
+    color: white;
+}
+
+.submit-now {
+    width: 143px;
+    height: 42px;
+    background-color: #27AE60;
+    color: white;
+    border: none;
+    align-self: center;
+    font-weight: 500;
+    margin: 30px;
+    transition: 0.3s;
+}
+
+.submit-now:hover {
+    filter: brightness(0.8);
+}
+
+.copyright {
+    font-size: 14px;
+    text-align: center;
+    color: #4F4F4F;
+    margin: 50px;
+}
+
+
+
+@media screen and (max-width: 576px) {
+    .skill-container {
+        max-width: 80vw;
+    }
+
+    .pepe {
+        width: 55vw;
+        height: 55vw;
+    }
+
+    .card {
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 906px) {
+    .navbar {
+        width: 100vw;
+        position: sticky;
+        right: 0;
+        margin: 0;
+        justify-content: end;
+        padding: 0;
+        top: 0;
+        z-index: 4;
+    }
+
+    .right-nav {
+        flex-direction: column;
+        display: flex;
+        background-color: #303030;
+        height: 100vh;
+        width: 50vw;
+        position: fixed;
+        padding-top: 100px;
+        top: 0;
+        transform: translateX(100%);
+        transition: 0.3s ease;
+    }
+
+    .right-nav a {
+        text-align: center;
+        width: 100%;
+    }
+
+    .underline {
+        display: none;
+    }
+
+    .hamborgir {
+        display: flex;
+        z-index: 1;
+    }
+
+    .hamborgir-container {
+        display: flex;
+        z-index: 1;
+        width: 50vw;
+        justify-content: center;
+    }
+
+
+
+    .hero-section {
+        flex-direction: column;
+    }
+
+    .aside-lefts {
+        text-align: center;
+    }
+
+    .logo {
+        display: none;
+    }
+
+}
+
+.right-nav-toggle {
+    transform: translateX(0);
+    opacity: 1;
+}
